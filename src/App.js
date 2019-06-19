@@ -1,24 +1,56 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './assets/App.scss';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main">
+        <div className="gameboy-container">
+            <div className="section__top">
+                <div className="verticals"></div>
+                <div className="horizontal"></div>
+            </div>
+            <div className="section__screen">
+                <div className="screen__title">
+                    <div className="line"></div>      
+                </div>
+                <div className="screen__power">
+                    <div className="light"></div>
+                    <div className="label">BATTERY</div>
+                </div>
+                <div className="screen__viewport"></div>
+            </div>
+            <div className="section__label">Nintendo<span>GAMEBOY</span></div>
+            <div className="section__buttons">
+                <div className="dpad">
+                    <div className="updown"></div>
+                    <div className="leftright"></div>
+                </div>
+                <div className="ab">
+                    <div className="button"><span>B</span></div>
+                    <div className="button"><span>A</span></div>
+                </div>
+            </div>
+            <div className="section__bottom">
+                <div className="options">
+                    <div className="button">
+                        <div className="inner select"></div>
+                        <span>SELECT</span>
+                    </div>
+                    <div className="button outer">
+                        <div className="inner select"></div>
+                        <span>START</span>
+                    </div>
+                </div>
+                <div className="speaker">
+                    <div className="grill"></div>
+                    <div className="grill"></div>
+                    <div className="grill"></div>
+                    <div className="grill"></div>
+                    <div className="grill"></div>
+                    <div className="grill"></div>
+                </div>
+            </div>
+        </div>
     </div>
   );
 }

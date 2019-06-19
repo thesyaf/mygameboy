@@ -1,0 +1,195 @@
+.main {
+  background-color: burlywood;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .gameboy-container {
+    height: 600px;
+    width: 360px;
+    border-radius: 10px 10px 60px;
+    background-color: #C7C1BC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(146, 146, 146);
+    .section__ {
+      &top {
+        height: 8%;
+        width: 100%;
+        .verticals {
+          width: 300px;
+          height: 20px;
+          margin: auto;
+          border-left: 5px solid #BAB2A9;
+          border-right: 5px solid #BAB2A9;
+        }
+        .horizontal {
+          width: 100%;
+          border-bottom: 5px solid #BAB2A9;
+        }
+      }
+      &screen {
+        border: 1px solid #5B565D;
+        height: 39%;
+        width: 300px;
+        background-color: #5A565E;
+        border-radius: 10px 10px 50px;
+        position: relative;
+        .screen__ {
+          &title {
+            height: 11%;
+            width: 90%;
+            margin: auto;
+            position: relative;
+            .line {
+              position: absolute;
+              height: 3px;
+              width: 100%;
+              top: 10px;
+              margin: auto;
+              border-top: 2px solid #6C304F;
+              border-bottom: 2px solid rgb(41, 27, 163);
+            }
+          }
+          &power {
+            width: 50px;
+            position: absolute;
+            top: 30%;
+            left: 10px;
+            .light {
+              width: 10px;
+              height: 10px;
+              border-radius: 50%;
+              margin-left: 5px;
+              background-color: red;
+              box-shadow: inset 3px 2px 3px -1px #000000;
+            }
+            .label {
+              font-size: 8px;
+              color: #fff;
+              margin-top: 5px;
+            }
+          }
+          &viewport {
+            height: 77%;
+            width: 180px;
+            margin: auto;
+            border-radius: 2px;
+            background-color: #8bac0f;
+            box-shadow: inset 4px 4px 4px -1px #000000;
+          }
+        }
+      }
+      &label {
+        height: 5%;
+        width: 300px;
+        color: #2A2A57;
+        span {
+          font-size: 22px;
+        }
+      }
+      &buttons {
+        height: 28%;
+        width: 300px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .dpad {
+          height: 80px;
+          width: 100px;
+          position: relative;
+          .updown, .leftright {
+            height: 100%;
+            width: 30px;
+            border-radius: 5px;
+            background-color: #000000;
+            position: absolute;
+            left: calc(50% - 15px);
+            box-shadow: 2px 2px 2px -1px #000000;
+          }
+          .leftright {
+            transform: rotate(90deg);
+            box-shadow: 2px -2px 2px -1px #000000;
+          }
+        }
+        .ab {
+          height: 50px;
+          width: 100px;
+          border-radius: 20px;
+          background-color: #BAB2A9;
+          transform: rotate(-25deg);
+          margin: 15px;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          .button {
+            height: 40px;
+            width: 40px;
+            background-color: #850042;
+            border-radius: 50%;
+            box-shadow: 2px 2px 2px -1px #000000;
+            span {
+              position: absolute;
+              bottom: -20px;
+              margin-left: 15px;
+              text-align: center;
+            }
+          }
+        }
+      }
+      &bottom {
+        height: 20%;
+        width: 300px;
+        position: relative;
+        .options {
+          display: flex;
+          position: absolute;
+          left: calc(50% - 70px);
+          .button {
+            height: 18px;
+            width: 50px;
+            background-color: #BAB2A9;
+            border-radius: 10px;
+            margin: 5px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            transform: rotate(-25deg);
+            .inner {
+              height: 12px;
+              width: 44px;
+              border-radius: 6px;
+              background-color: #81777A;
+              box-shadow: 2px 2px 2px -1px #000000;
+          }
+            span {
+              position: absolute;
+              bottom: -14px;
+              font-size: 10px;
+            }
+          }
+        }
+        .speaker {
+          height: 100px;
+          width: auto;
+          transform: rotate(65deg);  
+          position: absolute;
+          bottom: 10px;
+          right: 10px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .grill {
+            height: 8px;
+            width: 60px;
+            border-radius: 5px;
+            background-color: #BAB2A9;
+            box-shadow: inset 2px 2px 2px -1px #000000;
+          }
+        }
+      }
+    }
+  }
+}
