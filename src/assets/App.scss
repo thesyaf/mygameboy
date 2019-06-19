@@ -115,11 +115,11 @@
         }
         .ab {
           height: 50px;
-          width: 100px;
-          border-radius: 20px;
+          width: 115px;
+          border-radius: 25px;
           background-color: #BAB2A9;
           transform: rotate(-25deg);
-          margin: 15px;
+          margin: 10px;
           display: flex;
           justify-content: space-around;
           align-items: center;
@@ -129,12 +129,22 @@
             background-color: #850042;
             border-radius: 50%;
             box-shadow: 2px 2px 2px -1px #000000;
-            span {
-              position: absolute;
-              bottom: -20px;
-              margin-left: 15px;
-              text-align: center;
+            &:active {              
+              background-color: #77003c;
+              transform: translate(1px, 1px);
+              box-shadow: none;
             }
+          }
+          span {
+            position: absolute;
+            bottom: -20px;
+            text-align: center;
+          }
+          .a {
+            left: 83px;
+          }
+          .b {
+            left: 25px;
           }
         }
       }
@@ -163,7 +173,11 @@
               border-radius: 6px;
               background-color: #81777A;
               box-shadow: 2px 2px 2px -1px #000000;
-          }
+              &:active {              
+                background-color: rgb(110, 105, 99);
+                box-shadow: none;
+              }
+            }
             span {
               position: absolute;
               bottom: -14px;

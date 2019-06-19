@@ -26,8 +26,10 @@ function App() {
                     <div className="leftright"></div>
                 </div>
                 <div className="ab">
-                    <div className="button"><span>B</span></div>
-                    <div className="button"><span>A</span></div>
+                    <span className="b">B</span>
+                    <span className="a">A</span>
+                    <div className="button"></div>
+                    <div className="button"></div>
                 </div>
             </div>
             <div className="section__bottom">
